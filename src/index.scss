@@ -1,5 +1,5 @@
-body {
-  background: black;
-  color: white;
-  font-family: "Montserrat", sans-serif;
-}
+/*Reset style*/
+@use "./style/reset";
+/*Style for common/usual components*/
+@use "./style/common";
+
