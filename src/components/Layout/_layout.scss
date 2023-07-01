@@ -111,11 +111,11 @@
       width: 120px;
       height: 120px;
     }
-    .family-logo{
+    .family-logo {
       width: 170px;
     }
   }
-  
+
   .nav {
     display: block;
 
@@ -141,11 +141,11 @@
 }
 
 @media screen and (min-width: $lg) {
-  .footer-wrapper{
+  .footer-wrapper {
     flex-direction: row-reverse;
     justify-content: space-between;
   }
-  .copyright{
+  .copyright {
     display: none;
   }
 }
