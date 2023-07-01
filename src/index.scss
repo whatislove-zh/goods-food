@@ -2,4 +2,5 @@
 @use "./style/reset";
 /*Style for common/usual components*/
 @use "./style/common";
-
+/*Layout style*/
+@use "./components/Layout/layout";

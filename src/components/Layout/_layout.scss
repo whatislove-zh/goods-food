@@ -1,0 +1,151 @@
+@import "../../style/variables";
+/*HEADER STYLE*/
+
+.header {
+  background: $white;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 0;
+}
+
+.logo {
+  object-fit: cover;
+}
+
+@media screen and (min-width: $md) {
+  .logo {
+    width: 150px;
+  }
+}
+
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: $md) {
+  .nav {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+.nav-list-item {
+  cursor: pointer;
+  font-size: $medium-size;
+  font-weight: $medium-weight;
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .nav-list-item {
+    font-size: $big-size;
+  }
+}
+
+.header-buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.shopping-cart,
+.burger-menu,
+.search {
+  height: 30px;
+  width: 30px;
+}
+
+.shop-now {
+  display: none;
+  font-weight: $bold-weight;
+  font-size: $medium-size;
+}
+
+@media screen and (min-width: $md) {
+  .shop-now {
+    display: block;
+  }
+}
+
+.burger-menu {
+  width: 80px;
+}
+
+@media screen and (min-width: $md) {
+  .burger-menu {
+    display: none;
+  }
+}
+
+/*Footer STYLE*/
+
+.footer {
+  background-color: $dark-purple;
+  color: $white;
+}
+
+.footer-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
+
+  .logo-container {
+    display: flex;
+    gap: 20px;
+  }
+
+  @media screen and (min-width: $md) {
+    .logo {
+      width: 120px;
+      height: 120px;
+    }
+    .family-logo {
+      width: 170px;
+    }
+  }
+
+  .nav {
+    display: block;
+
+    .nav-list {
+      flex-direction: column;
+    }
+
+    .nav-list-item {
+      a {
+        color: $white;
+      }
+    }
+  }
+  .socials {
+    display: flex;
+    gap: 20px;
+  }
+  .socials-btn {
+    color: white;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .footer-wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .copyright {
+    display: none;
+  }
+}
