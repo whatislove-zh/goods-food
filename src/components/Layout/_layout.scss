@@ -1,0 +1,73 @@
+@import "../../style/variables";
+/*HEADER STYLE*/
+
+.header {
+  background: $white;
+}
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 0;
+}
+
+.logo {
+  object-fit: cover;
+}
+
+.nav {
+  display: none;
+}
+
+@media screen and (min-width: $md) {
+  .nav {
+    display: block;
+  }
+}
+
+.nav-list {
+  display: flex;
+  gap: 20px;
+}
+.nav-list-item {
+  cursor: pointer;
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+}
+
+.header-buttons {
+  display: none;
+  align-items: center;
+  gap: 20px;
+}
+@media screen and (min-width: $md) {
+  .header-buttons {
+    display: flex;
+  }
+}
+
+.shopping-cart,
+.burger-menu,
+.search {
+  height: 30px;
+  width: 30px;
+}
+
+.shop-now {
+  font-weight: $bold-weight;
+  font-size: $medium-size;
+}
+
+.burger-menu {
+  display: block;
+}
+
+@media screen and (min-width: $md) {
+  .burger-menu {
+    display: none;
+  }
+}

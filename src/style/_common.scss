@@ -1,5 +1,41 @@
+@import "./variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-    background: black;
-    color: white;
-    font-family: "Montserrat", sans-serif;
+  background: $wheat;
+  color: $black;
+  font-family: "Montserrat", sans-serif;
+  font-size: $regular-size;
+  font-weight: $regular-weight;
+}
+
+.container {
+  margin: auto;
+  max-width: $lg;
+  padding: 0 20px;
+}
+
+.svg-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+
+  svg {
+    height: inherit;
+    width: inherit;
   }
+}
+
+.orange-btn {
+  background-color: $orange;
+  color: $white;
+  border: none;
+  border-radius: 15px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
