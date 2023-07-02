@@ -1,7 +1,13 @@
-import React from 'react'
+import FoodSwiper from "../components/Home/FoodSwiper";
 
 export default function Home() {
   return (
-    <div>Home</div>
-  )
+    <section>
+      <div className="container">
+        <div className="home-wrapper">
+          <FoodSwiper />
+        </div>
+      </div>
+    </section>
+  );
 }
