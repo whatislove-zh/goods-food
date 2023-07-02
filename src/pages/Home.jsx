@@ -1,4 +1,5 @@
 import FoodSwiper from "../components/Home/FoodSwiper";
+import Hero from "../components/Home/Hero"
 
 export default function Home() {
   return (
@@ -6,6 +7,7 @@ export default function Home() {
       <div className="container">
         <div className="home-wrapper">
           <FoodSwiper />
+          <Hero />
         </div>
       </div>
     </section>
