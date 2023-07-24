@@ -11,7 +11,7 @@ import {
   BsPinterest,
 } from "react-icons/bs";
 
-export default function Footer() {
+const Footer = () => {
   return (
     <footer className="footer">
       <div className="container">
@@ -23,7 +23,6 @@ export default function Footer() {
             >
               <BsPinterest />
             </a>
-
             <a
               href="https://www.instagram.com/goodfoods/"
               className="svg-btn socials-btn"
@@ -50,7 +49,6 @@ export default function Footer() {
             </a>
           </div>
           <Navigation />
-          
           <div className="logo-container">
             <a href="/">
               <img
@@ -76,4 +74,6 @@ export default function Footer() {
       </div>
     </footer>
   );
-}
+};
+
+export default Footer;

@@ -4,8 +4,9 @@ import { BsSearchHeart } from "react-icons/bs";
 import { HiMenuAlt1 } from "react-icons/hi";
 
 import Navigation from "./Navigation";
+import { Link } from "react-router-dom";
 
-export default function Header() {
+const Header = () => {
   return (
     <header className="header">
       <div className="container">
@@ -14,7 +15,7 @@ export default function Header() {
             <HiMenuAlt1 />
           </button>
           <div className="logo-container">
-            <a href="/">
+            <Link to="/">
               <img
                 className="logo"
                 src={logo}
@@ -22,7 +23,7 @@ export default function Header() {
                 width="120px"
                 height="60px"
               />
-            </a>
+            </Link>
           </div>
           <Navigation />
           <div className="header-buttons">
@@ -38,4 +39,5 @@ export default function Header() {
       </div>
     </header>
   );
-}
+};
+export default Header;
