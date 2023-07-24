@@ -1,4 +1,11 @@
+import Swiper from "../components/Slider";
+
 const Home = () => {
-  return <div>Home</div>;
+  return (
+    <section className="home-section">
+      <Swiper />
+      <div className="container"></div>
+    </section>
+  );
 };
 export default Home;
