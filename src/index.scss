@@ -3,4 +3,6 @@
 /*Style for common/usual components*/
 @use "./style/common";
 /*Layout style*/
-@use "./components/Layout/layout";
+@use "./style/layout";
+/*Not Found Page Style*/
+@use "./style/not-found";
