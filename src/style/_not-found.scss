@@ -1,0 +1,36 @@
+@import "./variables";
+
+.not-found-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 15px;
+}
+
+.not-found-title {
+  font-size: $large-size;
+  font-weight: $bold-weight;
+}
+
+.not-found-text{
+    font-size: $medium-size;
+}
+
+.not-found-return{
+    font-size: $big-size;
+    padding: 5px 15px;
+    border: 1px solid $dark-purple;
+    border-radius: 15px;
+    color: $dark-purple;
+    background:$orange;
+    transition: all 0.5s ease;
+
+    &:hover{
+        transform: scale(1.2);
+    }
+}
+
